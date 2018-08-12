@@ -9,4 +9,6 @@ To build just type:
 
 ```make all```
 
+To run:
 
+```./demo```
