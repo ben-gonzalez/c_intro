@@ -12,9 +12,9 @@ class Node {
   void setPrev(Node* prev);
 
  private:
-  Node* _next;
-  Node* _prev;
-  int _value;
+  Node* m_next;
+  Node* m_prev;
+  int m_value;
 };
 
 class List {
@@ -27,8 +27,8 @@ class List {
   int count();
 
  private:
-  Node* _head;
-  Node* _tail;
+  Node* m_head;
+  Node* m_tail;
 };
 
 #endif
