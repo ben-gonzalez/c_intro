@@ -4,11 +4,11 @@ LINKFLAGS= -g -Wall
 
 all: demo
 
-demo: List.o main.o Tests.o
-	$(CPP) $(LINKFLAGS) -o demo List.o main.o Tests.o -lgtest -lpthread
+demo: List.o main.o TestList.o
+	$(CPP) $(LINKFLAGS) -o demo List.o main.o TestList.o -lgtest -lpthread
 
-Tests.o: Tests.cpp List.h
-	$(CPP) $(CFLAGS) -c Tests.cpp -o Tests.o
+TestList.o: TestList.cpp List.h
+	$(CPP) $(CFLAGS) -c TestList.cpp -o TestList.o
 
 List.o: List.h List.cpp
 	$(CPP) $(CFLAGS) -c List.cpp -o List.o
